@@ -9,17 +9,17 @@ bool visited[100001]={false,};
 int wide = 0;
 int farthestNode = 0;
 
-void dfs(int start, int cost){
-    if (visited[start])
-        return;
+void dfs(int start,int distance){
+    if(visited[start])return;
     visited[start]=true;
-    if(wide<cost){
-        wide = cost;
-        farthestNode= start;
+    
+    if(distance>wide){
+        wide=distance;
+        farthestNode=start;
     }
 
     for(int i=0;i<arr[start].size();i++){
-         dfs(arr[start][i].first, cost+arr[start][i].second);
+        dfs(arr[start][i].first,distance+arr[start][i].second);
     }
 }
 
@@ -37,10 +37,10 @@ int main(){
         }
     }
 
-    dfs(1,0);
+    dfs(1,0);       //root에서 가장 먼 node를 찾는다
     memset(visited, false, sizeof(visited));
     wide=0;
-    dfs(farthestNode,0);
+    dfs(farthestNode,0);    //가장 먼것에서 젤 먼 노드를 찾는다.
 
     cout<<wide<<"\n";
 
