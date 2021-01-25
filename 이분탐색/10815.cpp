@@ -19,7 +19,7 @@ int binarySearch(int key){
         
         if(card[middle]<key)
             first=middle+1;
-        
+         
         middle=(first+last)/2;
         
     }
