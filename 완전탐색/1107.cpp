@@ -32,6 +32,7 @@ int time(){
     }
     
     return result;
+}
 
 int main(){
     cin>>n>>m;
