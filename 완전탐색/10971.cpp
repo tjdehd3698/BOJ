@@ -7,7 +7,6 @@ bool visited[10]={false,};
 int n,result=10000001;
 
 void dfs(int x,int y, int sum,int cnt){
-    //cout<<cnt<<"  ==  "<<x<<","<<y<<" : "<<sum<<endl;
     if(cnt == n && x == y){
         if(result > sum) result = sum;
         return;
