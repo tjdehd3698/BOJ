@@ -16,6 +16,7 @@ bool check(int point){
     }
     return cnt>=c;
 }
+
 int main(){
     cin>>n>>c;
 
