@@ -4,7 +4,7 @@ using namespace std;
 long long n,m;
 long long arr[1000000];
 
-//mid를 기준점으로 설정 시 길이를 채울 수 있는지 확인 
+
 bool check(long long mid){  
     long long result=0;
 
