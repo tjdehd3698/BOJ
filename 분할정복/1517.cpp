@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 
-int a[500000];
-int b[500000];
+int a[500000];  //원본배열
+int b[500000];  //정렬된 배열
 int n;
 long long result;
 

@@ -3,6 +3,7 @@ using namespace std;
 
 int main(){
     int time;
+    cout<<"ㄴㅁ";
     cin>>time;
     int cnt=0;
 
@@ -18,6 +19,7 @@ int main(){
     }
 
     cout<<cnt<<"\n";
+    
 
     return 0;
 }
