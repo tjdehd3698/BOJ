@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
  
-int dy[4]={1,-1,0,0};
-int dx[4]={0,0,1,-1};
+int dy[4]={0,1,0,-1};
+int dx[4]={-1,0,1,0};
 
 int M,N,K;
 int arr[50][50]={0};
